@@ -2,9 +2,9 @@ import React, {FC} from 'react';
 import {StatusBar, View, SafeAreaView} from 'react-native';
 import Style from './style';
 
-type Props = {
-  children: string;
-};
+// type Props = {
+//   children: string;
+// };
 
 const Header: FC<Props> = ({children}) => {
   return (

@@ -8,15 +8,15 @@ import {
   Keyboard
 } from 'react-native';
 import Geolocation from 'react-native-geolocation-service';
-// import {Header} from '@Component';
+import {Header} from '../../component/index';
 import opencage from 'opencage-api-client';
 import DeviceInfo from 'react-native-device-info';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import EvilIcon from 'react-native-vector-icons/EvilIcons';
 
 import Style from './style';
-// import List from './options/index';
-// import FilteredList from './filtered_mappedFlights/index.js';
+import List from './options/index';
+import FilteredList from './filtered_mappedFlights/index';
 
 const Home: FC = () => {
   const [location, setLocation] = useState('Sydney Airport');
@@ -62,6 +62,7 @@ const Home: FC = () => {
       <Header>
         <View style={Style.navChildren}>
           <View style={Style.navIcon}>
+            
             <EvilIcon
               name="location"
               color="#fd5371"

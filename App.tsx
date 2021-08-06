@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import Home from '@Screen/Home'
+import Home from './src/app/screen/Home/index'
 
 const App: FC = () => {
   return (
